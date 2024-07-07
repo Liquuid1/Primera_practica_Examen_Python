@@ -1,0 +1,52 @@
+Problema: Sistema de Gestión de Inventarios para una Tienda de Electrónica
+
+Usted ha sido contratado para desarrollar un sistema de gestión de inventarios para una tienda de electrónica. 
+La tienda desea mantener un registro detallado de sus productos, sus cantidades y sus precios. 
+Además, el sistema debe ser capaz de realizar varias operaciones sobre este inventario.
+Requerimientos del Sistema
+
+    Cargar Datos del Inventario:
+        El sistema debe ser capaz de leer la información del inventario desde un archivo en formato CSV. El archivo tendrá las siguientes columnas: id_producto, nombre_producto, cantidad, y precio.
+
+    Mostrar Inventario: 1
+        Mostrar en la pantalla el inventario completo de productos, incluyendo el id_producto, nombre_producto, cantidad, y precio.
+
+    Buscar Producto: 2
+        Permitir al usuario buscar un producto por su id_producto y mostrar la información de ese producto en particular.
+
+    Actualizar Inventario: 3
+        Permitir al usuario actualizar la cantidad de un producto específico. El usuario debe ingresar el id_producto y la nueva cantidad.
+
+    Agregar Nuevo Producto: 4
+        Permitir al usuario agregar un nuevo producto al inventario. El usuario debe proporcionar el id_producto, nombre_producto, cantidad, y precio.
+
+    Eliminar Producto: 5
+        Permitir al usuario eliminar un producto del inventario mediante su id_producto.
+
+    Guardar Datos: 6
+        El sistema debe guardar el inventario actualizado en un archivo en formato JSON al finalizar las operaciones.
+
+Funciones Requeridas
+
+Implemente las siguientes funciones para cubrir los requerimientos del sistema:
+
+    cargar_datos_inventario(archivo_csv): Lee los datos del archivo CSV y los almacena en una estructura de datos adecuada.
+    mostrar_inventario(inventario): Muestra el inventario completo en la pantalla.
+    buscar_producto(inventario, id_producto): Busca un producto por su id_producto y muestra la información del producto.
+    actualizar_inventario(inventario, id_producto, nueva_cantidad): Actualiza la cantidad de un producto específico.
+    agregar_nuevo_producto(inventario, id_producto, nombre_producto, cantidad, precio): Agrega un nuevo producto al inventario.
+    eliminar_producto(inventario, id_producto): Elimina un producto del inventario.
+    guardar_datos_inventario(inventario, archivo_json): Guarda los datos del inventario en un archivo JSON.
+
+Estructuras de Decisión y Repetición
+
+Utilice estructuras de decisión (if, elif, else) para gestionar las opciones del menú de operaciones y estructuras de repetición (for, while) para iterar sobre los datos del inventario y para permitir múltiples operaciones hasta que el usuario decida salir.
+Ejecución
+
+El programa debe iniciar mostrando un menú con las opciones mencionadas y permitir al usuario seleccionar la operación que desea realizar hasta que decida salir.
+
+Notas:
+
+    Asegúrese de manejar errores comunes, como intentar buscar o actualizar un producto que no existe.
+    Utilice colecciones como listas, tuplas y diccionarios para gestionar y organizar los datos del inventario.
+    El archivo CSV de entrada estará en la misma carpeta que el script de Python.

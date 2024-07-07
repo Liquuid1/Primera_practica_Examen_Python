@@ -1,0 +1,16 @@
+{
+    "inventario": [
+        {
+            "id_producto": "101",
+            "nombre_producto": "bateria",
+            "cantidad": "6000",
+            "precio": "90000"
+        },
+        {
+            "id_producto": "102",
+            "nombre_producto": "pandero",
+            "cantidad": "32",
+            "precio": "5000"
+        }
+    ]
+}
